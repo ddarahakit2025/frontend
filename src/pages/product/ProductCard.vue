@@ -12,12 +12,12 @@ const props = defineProps({
 <template>
     <li class="product-list-item">
         <div class="product-list-item-wrapper">
-            <a href="/detail.html">
+            <router-link :to="`/product/${product.id}`">
                 <div class="product-image-wrapper">
                     <img src="https://img.29cm.co.kr/item/202310/11ee62764f2aec1da5b337e05227e995.jpg?width=400"
                         :alt="product.name" />
                 </div>
-            </a>
+            </router-link>
             <div class="product-info-wrapper">
                 <a href="/detail.html" class="product-info-link">{{ product.seller }}</a><a href="/detail.html">
                     <div>

@@ -76,10 +76,8 @@ onMounted(async () => {
                 </ul>
             </div>
 
-            <div v-if="loadingStore.isLoading" class="loading-overlay">
-                <div class="spinner"></div>
-            </div>
-            <ul v-else class="product-list">
+
+            <ul class="product-list">
                 <ProductCard v-for="product in productStore.products" :key="product.id" :product="product">
                 </ProductCard>
             </ul>
