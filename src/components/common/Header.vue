@@ -26,10 +26,10 @@
                     </a>
                 </li>
                 <li class="header-user-nav-item">
-                    <a href="/login.html" class="header-user-nav-item-link">
+                    <router-link to="/user/login" class="header-user-nav-item-link">
                         <i class="fa-solid fa-right-to-bracket"></i>
                         LOGIN
-                    </a>
+                    </router-link>
                 </li>
             </ul>
         </div>
@@ -50,7 +50,7 @@
         </ul>
         <ul class="nav">
             <li class="nav-item nav-item-best">
-                <a class="nav-item-link" href="/index.html"> BEST </a>
+                <router-link class="nav-item-link" to="/product/list">BEST</router-link>
             </li>
             <li class="nav-item nav-item-women">
                 <a class="nav-item-link" href="#"> WOMEN </a>
